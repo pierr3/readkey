@@ -8,7 +8,7 @@ enum CGEventSourceStateID {
     System = 1,
 }
 
-/// Carbon's virtual keycodes, found [here](https://snipplr.com/view/42797/).
+/// Carbon's virtual keycodes, found [here](https://chromium.googlesource.com/chromium/src/+/master/ui/events/keycodes/keyboard_code_conversion_mac.mm).
 #[derive(Clone, Copy)]
 #[repr(u16)]
 pub enum Keycode {
@@ -84,13 +84,13 @@ pub enum Keycode {
   Delete                 = 0x33,
   Escape                 = 0x35,
   Command                = 0x37,
-  Shift                  = 0x38,
+  Shift                  = 0xA0,
   CapsLock               = 0x39,
-  Option                 = 0x3A,
-  Control                = 0x3B,
-  RightShift             = 0x3C,
-  RightOption            = 0x3D,
-  RightControl           = 0x3E,
+  Option                 = 0xA4,
+  Control                = 0xA2,
+  RightShift             = 0xA1,
+  RightOption            = 0xA5,
+  RightControl           = 0xA3,
   Function               = 0x3F,
   F17                    = 0x40,
   VolumeUp               = 0x48,
